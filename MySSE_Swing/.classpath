@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Git/MySSE/MySSE_Swing/libs/android-support-v4.jar"/>
 	<classpathentry kind="lib" path="E:/Git/MySSE/MySSE_Swing/libs/commons-codec-1.6.jar"/>
 	<classpathentry kind="lib" path="E:/Git/MySSE/MySSE_Swing/libs/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="E:/Git/MySSE/MySSE_Swing/libs/fluent-hc-4.2.2.jar"/>
