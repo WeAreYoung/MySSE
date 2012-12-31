@@ -16,9 +16,10 @@ public class AnalysisData {
 	 */
 	public static ArrayList<HashMap<String, String>> getDataFromJSONArray(
 			JSONArray jsonarray) {
+
 		ArrayList<HashMap<String, String>> arraylist = new ArrayList<HashMap<String, String>>();
 
-		if (jsonarray.length() == 0)
+		if (jsonarray.length() == 0 || jsonarray == null)
 			return arraylist;
 		try {
 

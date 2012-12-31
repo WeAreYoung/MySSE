@@ -6,7 +6,6 @@ package Interface;
 import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
 /**
@@ -31,13 +30,14 @@ public class MainFrame extends JFrame {
 	public MainFrame() throws HeadlessException {
 		// TODO Auto-generated constructor stub
 
-		this.setBounds(0, 0, 1360, 720);
+		this.setLayout(null);
+		this.setSize(805, 625);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		category.setBounds(0, 0, 1360, 100);
+		category.setBounds(10, 10, 780, 100);
 		category.setBorder(new TitledBorder(""));
-		title.setBounds(0, 100, 500, 620);
+		title.setBounds(10, 120, 300, 475);
 		title.setBorder(new TitledBorder(""));
-		content.setBounds(500, 100, 860, 620);
+		content.setBounds(320, 120, 470, 475);
 		content.setBorder(new TitledBorder(""));
 		
 		this.add(category);

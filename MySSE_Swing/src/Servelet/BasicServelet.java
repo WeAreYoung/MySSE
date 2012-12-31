@@ -14,12 +14,13 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 public class BasicServelet {
 
-	static String urladdress = "http://192.168.1.100";
+	static String urladdress = "http://192.168.1.100/";
 
 	/**
 	 * @param serveletName
@@ -92,9 +93,8 @@ public class BasicServelet {
 			jsonobject = new JSONObject(new JSONTokener(connectGetString(
 					serveletName, message, httpclient)));
 		} catch (Exception e) {
-
 		}
-		return jsonobject;
+		 return jsonobject;
 	}
 
 }
