@@ -76,6 +76,15 @@ public class BasicServelet {
 		return str;
 	}
 
+	/**
+	 * @param serveletName
+	 *            连接服务名称
+	 * @param message
+	 *            Post参数 可以为null
+	 * @param httpclient
+	 *            传入null
+	 * @return str 从服务器取得的JSONObject
+	 */
 	public static JSONObject connectGetJSONObject(String serveletName,
 			List<NameValuePair> message, HttpClient httpclient) {
 		JSONObject jsonobject = null;
@@ -87,4 +96,5 @@ public class BasicServelet {
 		}
 		return jsonobject;
 	}
+
 }
