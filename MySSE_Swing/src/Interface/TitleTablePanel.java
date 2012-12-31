@@ -2,7 +2,7 @@
  * 
  */
 package Interface;
-
+import DataCore.*;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -31,8 +31,17 @@ public class TitleTablePanel extends JPanel {
 	private DefaultTableModel tableModel_notice = null;
 	private DefaultTableModel tableModel_news = null;
 	private DefaultTableModel tableModel_activity = null;
-	
 	private DefaultTableModel [] tableModel_array = new DefaultTableModel[3];
+	
+	public void setTableModel_notice(DefaultTableModel _newModel) {
+		this.tableModel_notice = _newModel;
+	}
+	public void setTableModel_news(DefaultTableModel _newModel) {
+		this.tableModel_news = _newModel;
+	}
+	public void setTableModel_activity(DefaultTableModel _newModel) {
+		this.tableModel_activity = _newModel;
+	}
 	/**
 	 * 
 	 */
@@ -44,8 +53,11 @@ public class TitleTablePanel extends JPanel {
 		this.tableModel_array[2] = this.tableModel_activity;
 	}
 	
-	public void select(int i_categoty) {
-		
+	public boolean select(int i_category) {
+		switch (i_category) {
+		case:Global.
+		}
+		return true;
 	}
 
 }
