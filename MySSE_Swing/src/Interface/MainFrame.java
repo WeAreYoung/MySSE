@@ -23,35 +23,37 @@ public class MainFrame extends JFrame {
 	/**
 	 * @throws HeadlessException
 	 */
+
+	private ContentPanel content=new ContentPanel();
+	private TitleTablePanel title=new TitleTablePanel(content);
+	private  CategorySelect category=new CategorySelect(title);
+	
 	public MainFrame() throws HeadlessException {
 		// TODO Auto-generated constructor stub
-	}
 
+		this.setBounds(0, 0, 1360, 720);
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		category.setBounds(0, 0, 1360, 100);
+		category.setBorder(new TitledBorder(""));
+		title.setBounds(0, 100, 500, 620);
+		title.setBorder(new TitledBorder(""));
+		content.setBounds(500, 100, 860, 620);
+		content.setBorder(new TitledBorder(""));
+		
+		this.add(category);
+		this.add(title);
+		this.add(content);
+		
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		JFrame jf=new JFrame();
-		jf.setBounds(0, 0, 1360, 720);
-		jf.setVisible(true);
-		JPanel p=new JPanel();
-		jf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		ContentPanel content=new ContentPanel();
-		TitleTablePanel title=new TitleTablePanel(content);
-		CategorySelect category=new CategorySelect(title);
-		category.setBounds(0, 0, 1360, 100);
-		category.setBorder(new TitledBorder("1"));
-		title.setBounds(0, 100, 500, 620);
-		title.setBorder(new TitledBorder("2"));
-		content.setBounds(500, 100, 860, 620);
-		content.setBorder(new TitledBorder("3"));
-		jf.add(category);
-		jf.add(title);
-		jf.add(content);
-		jf.add(p);
+		new MainFrame();
 		// TODO Auto-generated method stub
-
 	}
 
 }

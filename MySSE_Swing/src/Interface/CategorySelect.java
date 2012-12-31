@@ -11,6 +11,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import DataCore.Global;
+
 /**
  * @author Mark
  *
@@ -26,7 +28,7 @@ public class CategorySelect extends JPanel {
     private JButton notice=new JButton();
     private JButton news=new JButton();
     private JButton activity=new JButton();
-    private ImageIcon notice_img=new ImageIcon("C:\\Users\\lenovo\\Documents\\GitHub\\MySSE\\MySSE_Swing\\src\\Interface\\116.gif");
+    private ImageIcon notice_img=new ImageIcon("116.gif");
     
 	/**	
 	 * 
@@ -55,18 +57,16 @@ public class CategorySelect extends JPanel {
                 Object name=e.getSource();
                 if(name == notice)
                 {
-                	int i=0;
-                    delegateTiTleTablePanel.select(i);
+                    delegateTiTleTablePanel.select(Global.NOTICE);
                 }
                 else if(name==news)
                 {
-                	int i=1;
-                    delegateTiTleTablePanel.select(i);
+                    delegateTiTleTablePanel.select(Global.NEWS);
                 }
                 else if(name==activity)
                 {
                 	int i=2;
-                    delegateTiTleTablePanel.select(i);
+                    delegateTiTleTablePanel.select(Global.ACTIVITY);
                 }
             }
         }
