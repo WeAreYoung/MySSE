@@ -55,7 +55,8 @@ public class TitleTablePanel extends JPanel {
 	
 	public boolean select(int i_category) {
 		switch (i_category) {
-		case:Global.
+		case Global.NOTICE:
+			
 		}
 		return true;
 	}
